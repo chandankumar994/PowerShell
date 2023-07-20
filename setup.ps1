@@ -93,9 +93,9 @@ function installContainers
     (set-location $dockerPath)
     #Write-Host $dockerPath    
     
-    #$Command = (docker-compose -f ./docker-compose.yml -f ./docker-compose.bre.yml up --build -d)
+    #$Command = (docker-compose -f ./docker-compose.yml -f ./docker-compose.bring.yml up --build -d)
     #WriteLog ("the command is " +$Command)
-    $status = (docker-compose -f ./docker-compose.yml -f ./docker-compose.bre.yml up --build -d)
+    $status = (docker-compose -f ./docker-compose.yml -f ./docker-compose.bring.yml up --build -d)
     
     if ($status -like '*done*')
     {
